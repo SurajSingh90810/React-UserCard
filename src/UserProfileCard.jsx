@@ -20,6 +20,11 @@ function UserProfileCard({ user }) {
           <span className="detail-label">Address:</span>
           <span>{user.address}</span>
         </div>
+
+        <div className="detail-item">
+          <span className="detail-label">Number:</span>
+          <span>{user.number}</span>
+        </div>
         
         <div className="detail-item">
           <span className="detail-label">Hobbies:</span>

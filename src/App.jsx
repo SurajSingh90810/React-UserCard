@@ -9,6 +9,7 @@ function App() {
       email: "john.doe@example.com",
       gender: "Male",
       address: "123 Main St, New York, NY 10001",
+      number:"455487844555",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
       hobbies: ["Reading", "Hiking", "Photography"],
       education: [
@@ -20,6 +21,7 @@ function App() {
       email: "jane.smith@example.com",
       gender: "Female",
       address: "456 Oak Ave, Los Angeles, CA 90001",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/women/44.jpg",
       hobbies: ["Painting", "Yoga", "Traveling"],
       education: [
@@ -31,6 +33,7 @@ function App() {
       email: "robert.j@example.com",
       gender: "Male",
       address: "789 Pine Rd, Chicago, IL 60601",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/men/67.jpg",
       hobbies: ["Cooking", "Gaming", "Music"],
       education: [
@@ -42,6 +45,7 @@ function App() {
       email: "emily.d@example.com",
       gender: "Female",
       address: "321 Elm St, Seattle, WA 98101",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/women/28.jpg",
       hobbies: ["Dancing", "Writing", "Swimming"],
       education: [
@@ -53,6 +57,7 @@ function App() {
       email: "michael.b@example.com",
       gender: "Male",
       address: "654 Maple Dr, Austin, TX 73301",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/men/53.jpg",
       hobbies: ["Cycling", "Photography", "Chess"],
       education: [
@@ -64,6 +69,7 @@ function App() {
       email: "sarah.w@example.com",
       gender: "Female",
       address: "987 Cedar Ln, Boston, MA 02101",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/women/63.jpg",
       hobbies: ["Reading", "Hiking", "Baking"],
       education: [
@@ -75,6 +81,7 @@ function App() {
       email: "sarah.w@example.com",
       gender: "Female",
       address: "987 Cedar Ln, Boston, MA 02101",
+       number:"455487844555",
       image: "https://randomuser.me/api/portraits/women/63.jpg",
       hobbies: ["Reading", "Hiking", "Baking"],
       education: [
@@ -87,8 +94,8 @@ function App() {
     <div className="app-container">
       <h1 className="page-title">User Profiles</h1>
       <div className="users-grid">
-        {usersData.map((user, index) => (
-          <UserProfileCard key={index} user={user} />
+        {usersData.map((user) => (
+          <UserProfileCard  user={user} />
         ))}
       </div>
     </div>
