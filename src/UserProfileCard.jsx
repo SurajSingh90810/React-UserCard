@@ -31,14 +31,16 @@ function UserProfileCard({ user }) {
           <span>{user.hobbies.join(', ')}</span>
         </div>
         
-        <div className="education-section">
-          <h3>Education</h3>
-          {user.education.map((edu, index) => (
-            <div key={index} className="education-item">
-              <p><strong>{edu.degree}</strong> in {edu.field}</p>
-              <p>{edu.university}</p>
-            </div>
-          ))}
+        <div className="detail-item">
+          <span className="detail-label">Education:</span>
+          <div className="education-content">
+            {user.education.map((edu, index) => (
+              <div key={index} className="education-item">
+                <p><strong>{edu.degree}</strong> in {edu.field}</p>
+                <p>{edu.university}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
